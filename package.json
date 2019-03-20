@@ -1,0 +1,35 @@
+{
+  "name": "ff-toy-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch-ts": "tsc -w",
+    "watch-node": "nodemon dist/server.js",
+    "watch": "concurrently -k -p \"[{name}]\" -n \"TypeScript, Node\" -c \"yello.bold, cyan.bold\" \"yarn run watch-ts\" \"yarn run watch-node\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/bcrypt": "^3.0.0",
+    "@types/bcrypt-nodejs": "0.0.30",
+    "@types/cors": "^2.8.4",
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4",
+    "firebase-admin": "^7.0.0",
+    "jsonwebtoken": "^8.5.0",
+    "mysql2": "^1.6.5",
+    "reflect-metadata": "^0.1.13",
+    "typeorm": "^0.2.14"
+  },
+  "devDependencies": {
+    "@types/express": "^4.16.1",
+    "@types/jsonwebtoken": "^8.3.2",
+    "@types/node": "^11.10.5",
+    "typescript": "^3.3.3333"
+  }
+}
